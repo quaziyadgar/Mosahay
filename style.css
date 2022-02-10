@@ -147,7 +147,7 @@ form{
 }
 input{
     /* margin: 10px; */
-    width: 100%;
+    width: 90%;
     height: 40px;
     padding: 20px;
     border: none;
@@ -161,16 +161,23 @@ form div{
     margin-right: 20px;
     margin-bottom: 20px;
     border: 1px solid rgb(165, 163, 163);
+    display: flex;
+    align-items: center;
 }
+form div i{
+    margin-left: 15px;
+}
+
 form .text-area{
     width: 100%;
     height: 150px;
     overflow-y: scroll;
-    
+    align-items: baseline;
 }
 textarea{
     width: 100%;
     padding: 20px;
+    border:  none;
     outline: none;
 }
 .heading-font{
@@ -187,24 +194,74 @@ textarea{
     flex-flow: row wrap;
     padding-top: 100px;
     margin: 0 auto;
+    justify-content: space-between;
     width: 78%;
 }
 .address{
     color: #fff;
-    width: 400px;
+    width: 280px;
+    margin-bottom: 50px;
 }
-.address-p{
+.address-p p{
     color: #aeb1b4;
-    text-align: center;
+    /* text-align: center; */
+    margin-bottom: 10px;
 }
 .address h1{
     margin-bottom: 40px;
 }
 .link1 ul li a{
     text-decoration: none;
-    color: ;
+    color: #fff ;
 }
-
+.ul1, .ul2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.ul-link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.link1{
+    margin-bottom: 40px;
+    width: 280px;
+}
+.link1 h1{
+    color: #fff;
+    margin-bottom: 40px;
+}
+.link2{
+    color: #fff;
+    width: 280px;
+}
+.link2 img{
+    margin: 40px;
+    width: 100%;
+}
+footer{
+    background-color: rgb(48,57,68);
+    display: flex;
+}
+.foot2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 78%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.icon{
+    width: 60%;
+}
+.icon span{
+    color: #fff;
+    margin-right: 20px;
+}
+.foot2 p{
+    color: #fff;
+}
 
 
 @media(max-width:1300px){
@@ -226,10 +283,47 @@ textarea{
     .head{
         justify-content: center;
     }
+    .foot2{
+        justify-content: center;
+    }
+    .icon{
+        text-align: center;
+    }
+    .icon span{
+        display: none;
+    }
+    .foot{
+        flex-direction: column;
+    }
+    .icon i{
+        padding: 0 10px;
+    }
+    .icon{
+        width: 100%;
+    }
 }
 
 @media(max-width:570px){
     form div{
+        width: 100%;
+    }
+    .foot{
+        flex-direction: column;
+    }
+    .address,.link1,.link2{
+        text-align: center;
+    }
+    .ul1,.ul2{
+        width: 100%;
+    }
+    .link2 img{
+        margin: 40px auto;
+        width: 100%;
+    }
+    .icon i{
+        padding: 0 10px;
+    }
+    .icon{
         width: 100%;
     }
 }
