@@ -273,6 +273,7 @@ footer{
     bottom: 0px;
     right: 0px;
     text-align: center;
+    text-decoration: none;
 }
 #scroll-top:hover{
     bottom: 5px;
