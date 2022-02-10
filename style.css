@@ -182,7 +182,28 @@ textarea{
 .footer1{
     background-color: rgb(74,83,94);
 }
-
+.foot{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 78%;
+}
+.address{
+    color: #fff;
+    width: 400px;
+}
+.address-p{
+    color: #aeb1b4;
+    text-align: center;
+}
+.address h1{
+    margin-bottom: 40px;
+}
+.link1 ul li a{
+    text-decoration: none;
+    color: ;
+}
 
 
 
