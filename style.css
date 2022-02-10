@@ -59,6 +59,7 @@ ul{
 }
 li{
     list-style: none;
+    
 }
 .menu li a{
     text-decoration: none;
@@ -87,6 +88,14 @@ li{
         /* border: 1px solid violet; */
         
 }
+.menu-btn img{
+    height: 50px;
+}
+.menu-btn{
+    display: none;
+}
+
+
 .container-image img{
     height: 404px;
     width: 100%;
@@ -127,6 +136,7 @@ li{
 }
 .info{
     width: 410px;
+    margin-bottom: 60px;
 }
 form{
     /* border: 1px solid black; */
@@ -146,7 +156,7 @@ input{
 form div{
     /* max-width: 350px; */
     /* border: 1px solid violet; */
-    width: 40%;
+    width: 45%;
     height: 50px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -168,4 +178,37 @@ textarea{
 }
 .info-p{
     margin-top: 50px;
+}
+.footer1{
+    background-color: rgb(74,83,94);
+}
+
+
+
+
+@media(max-width:1300px){
+    .menu{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .menu-btn{
+        display: inherit;
+    }
+}
+
+@media(max-width:1000px){
+    .email{
+        display: none;
+    }
+    .head{
+        justify-content: center;
+    }
+}
+
+@media(max-width:570px){
+    form div{
+        width: 100%;
+    }
 }
